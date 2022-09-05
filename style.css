@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    background-color: #8C8377;
+}
+
+.container .content {
+    background-color: #BFB5A8;
+    border-radius: 1em;
+    width: 30em;
+    height: 29.3em;
+    margin: 5em;
+    padding: 1em;
+}
+
+.content .control {
+    display: flex;
+    align-items: center;
+}
+
+.control .entry {
+    margin: 1em 0;
+    width: 85%;
+}
+
+.entry input {
+    padding: 6px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 0.3em;
+    background-color: #fafafa;
+    border: none;
+    outline: none;
+}
+
+.control .send {
+    display: flex;
+    margin: auto;
+}
+
+.send button {
+    height: 3em;
+    width: 3em;
+    border-radius: 2em;
+    background-color: #30D99B;
+    border: none;
+    cursor: pointer;
+}
+
+.send button:hover {
+    background-color: #2ABF89;
+}
+
+.send button:active {
+    background-color: #367368;
+}
+
+.send img {
+    margin: 9px 3px 0 0;
+    height: 2em;
+    width: 2em;
+}
+
+.content .notes {
+    background-color: #fafafa;
+    border-radius: 0.4em;
+    padding: 1em;
+    height: 85%;
+}
+
+.notes ul {
+    background-color: #fafafa;
+}
+
+.notes ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid ;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.notes li:hover {
+    background-color: #dfdfdf;
+}
+.notes li:hover button{
+    display: block;
+}
+
+.notes button {
+    display: none;
+    background-color: transparent;
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+.notes button img {
+    display: flex;
+    margin: auto;
+    height: 1em;
+    width: 1em;
+}
+
+#notebook {
+    overflow: scroll;
+    height: 20em;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.shakeAnimation {
+    animation: shake 0.4s;
+    animation-iteration-count:initial;
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0);}
+    25% { transform: translateX(5px);}
+    50% { transform: translateX(-5px);}
+    75% { transform: translateX(5px);}
+    100% { transform: translateX(0);}
+}
